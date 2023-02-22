@@ -27,7 +27,6 @@ choose_win = tkinter.Tk()
 choose_win.title('Choose the model')
 choose_win.geometry('500x250')
 choose_win.configure(background='deepskyblue4')
-choose = 'FaceNet and SVM'
 Text_choose = tkinter.Label(choose_win, text="Choose the Model", foreground="cyan2", font=(
     "Arial Black", 22), background='deepskyblue4')
 Text_choose.grid(row=0, column=1)
@@ -47,7 +46,7 @@ monthchoosen.place(x=100, y=90)
 next_button.place(x=100, y=145)
 monthchoosen.current(0)
 choose_win.mainloop()
-choose_ = n.get()
+choose = n.get()
 
 try:
     choose_win.destroy()
